@@ -1639,3 +1639,10 @@ function social_core_update_11404(): void {
 
   $role->setWeight(3)->save();
 }
+
+/**
+ * Install social_mailer module.
+ */
+function social_core_update_11501(): void {
+  \Drupal::service('module_installer')->install(['social_mailer']);
+}
