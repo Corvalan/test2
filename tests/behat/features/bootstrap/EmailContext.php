@@ -78,7 +78,7 @@ class EmailContext implements Context {
       $finder->files()->in($spoolDir);
       return $finder;
     }
-    catch (InvalidArgumentException $exception) {
+    catch (\InvalidArgumentException $exception) {
       return NULL;
     }
   }
