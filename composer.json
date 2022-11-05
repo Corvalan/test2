@@ -76,7 +76,8 @@
             },
             "drupal/flag": {
                 "Add relationship to flagged entities when Flagging is base table": "https://www.drupal.org/files/issues/2021-11-08/2723703-76.patch",
-                "3248173: Symfony 4.4 event dispatcher parameter order change": "https://www.drupal.org/files/issues/2021-11-08/symfony-4-4-event-dispatcher-parameter-order-change-3248173-2.patch"
+                "3248173: Symfony 4.4 event dispatcher parameter order change": "https://www.drupal.org/files/issues/2021-11-08/symfony-4-4-event-dispatcher-parameter-order-change-3248173-2.patch",
+                "[PHP8.1] Deprecated function: str_replace(): Passing null to parameter #2 ($replace) of type array|string is deprecated in Drupal\\Core\\Access\\RouteProcessorCsrf->processOutbound()": "https://www.drupal.org/files/issues/2022-04-07/5366574-str_replace-null-deprecation.patch"
             },
             "drupal/graphql": {
                 "Drupal\\Core\\Plugin\\ContextAwarePluginBase is deprecated in drupal:9.1.0 #1250": "https://github.com/drupal-graphql/graphql/files/7418857/graphql-deprecated-ContextAwarePluginBase.patch.txt",
