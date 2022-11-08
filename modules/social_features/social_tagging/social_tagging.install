@@ -291,7 +291,7 @@ function social_tagging_update_11402(): void {
 /**
  * Add a new field to social tagging.
  */
-function social_tagging_update_11403(): void {
+function social_tagging_update_11501(): void {
   $config_path = \Drupal::service('extension.list.module')->getPath('social_tagging') . '/config/static';
   $source = new FileStorage($config_path);
   $entity_type_manager = \Drupal::entityTypeManager();
@@ -302,7 +302,7 @@ function social_tagging_update_11403(): void {
   // Create field storages.
   /** @var \Drupal\Core\Field\FieldTypePluginManagerInterface $field_type_manager */
   $field_type_manager = \Drupal::service('plugin.manager.field.field_type');
-  $data = $source->read('field.storage.taxonomy_term.field_term_page_url_11402');
+  $data = $source->read('field.storage.taxonomy_term.field_term_page_url_11501');
   if (is_array($data)) {
     /** @var \Drupal\Core\Field\FieldItemInterface $class */
     $class = $field_type_manager->getPluginClass($data['type']);
@@ -315,7 +315,7 @@ function social_tagging_update_11403(): void {
   // Create field settings.
   /** @var \Drupal\Core\Config\Entity\ConfigEntityStorageInterface $field_config_storage */
   $field_config_storage = $entity_type_manager->getStorage('field_config');
-  $data = $source->read('field.field.taxonomy_term.social_tagging.field_term_page_url_11402');
+  $data = $source->read('field.field.taxonomy_term.social_tagging.field_term_page_url_11501');
   if (is_array($data) && is_null($field_config_storage->load($data['id']))) {
     $field_config_storage->create($data)->save();
   }
@@ -328,7 +328,7 @@ function social_tagging_update_11403(): void {
 
   foreach ($displays as $display) {
     $display_storage = $entity_type_manager->getStorage($display);
-    $data = $source->read("core.$display.taxonomy_term.social_tagging.default_11402");
+    $data = $source->read("core.$display.taxonomy_term.social_tagging.default_11501");
     if (is_array($data)) {
       if (is_null($display_storage->load($data['id']))) {
         $display_storage->create($data)->save();
