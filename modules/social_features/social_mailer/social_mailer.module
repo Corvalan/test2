@@ -127,7 +127,7 @@ function social_mailer_preprocess_email(array &$variables): void {
   }
   else {
     $to = $email->getTo();
-    $mail = isset($to[0]) ? $to[0]->getAddress() : FALSE;
+    $mail = isset($to[0]) ?? FALSE;
   }
 
   if ($mail && ($user = user_load_by_mail($mail)) instanceof UserInterface) {
