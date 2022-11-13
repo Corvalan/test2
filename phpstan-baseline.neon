@@ -15688,42 +15688,7 @@ parameters:
 			path: modules/social_features/social_swiftmail/src/Form/SocialSwiftmailSettingsForm.php
 
 		-
-			message: "#^Access to an undefined property Drupal\\\\social_swiftmail\\\\Plugin\\\\Mail\\\\SocialSwiftMailer\\:\\:\\$assetResolver\\.$#"
-			count: 1
-			path: modules/social_features/social_swiftmail/src/Plugin/Mail/SocialSwiftMailer.php
-
-		-
-			message: "#^Access to an undefined property Drupal\\\\social_swiftmail\\\\Plugin\\\\Mail\\\\SocialSwiftMailer\\:\\:\\$mailManager\\.$#"
-			count: 1
-			path: modules/social_features/social_swiftmail/src/Plugin/Mail/SocialSwiftMailer.php
-
-		-
-			message: "#^Access to an undefined property Drupal\\\\social_swiftmail\\\\Plugin\\\\Mail\\\\SocialSwiftMailer\\:\\:\\$renderer\\.$#"
-			count: 1
-			path: modules/social_features/social_swiftmail/src/Plugin/Mail/SocialSwiftMailer.php
-
-		-
-			message: "#^Access to an undefined property Drupal\\\\social_swiftmail\\\\Plugin\\\\Mail\\\\SocialSwiftMailer\\:\\:\\$themeManager\\.$#"
-			count: 1
-			path: modules/social_features/social_swiftmail/src/Plugin/Mail/SocialSwiftMailer.php
-
-		-
-			message: "#^Call to method getMailTheme\\(\\) on an unknown class Drupal\\\\mailsystem\\\\MailsystemManager\\.$#"
-			count: 1
-			path: modules/social_features/social_swiftmail/src/Plugin/Mail/SocialSwiftMailer.php
-
-		-
-			message: "#^Class Drupal\\\\mailsystem\\\\MailsystemManager not found\\.$#"
-			count: 1
-			path: modules/social_features/social_swiftmail/src/Plugin/Mail/SocialSwiftMailer.php
-
-		-
 			message: "#^Method Drupal\\\\social_swiftmail\\\\Plugin\\\\Mail\\\\SocialSwiftMailer\\:\\:massageMessageBody\\(\\) has no return type specified\\.$#"
-			count: 1
-			path: modules/social_features/social_swiftmail/src/Plugin/Mail/SocialSwiftMailer.php
-
-		-
-			message: "#^Method Drupal\\\\social_swiftmail\\\\Plugin\\\\Mail\\\\SocialSwiftMailer\\:\\:massageMessageBody\\(\\) has parameter \\$is_html with no type specified\\.$#"
 			count: 1
 			path: modules/social_features/social_swiftmail/src/Plugin/Mail/SocialSwiftMailer.php
 
