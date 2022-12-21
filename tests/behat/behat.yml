@@ -27,6 +27,7 @@ default:
         - Drupal\social\Behat\FeatureContext
         - Drupal\social\Behat\LogContext
         - Drupal\social\Behat\ModuleContext
+        - Drupal\social\Behat\ProfileContext
         - Drupal\social\Behat\SearchContext
         - Drupal\social\Behat\SocialDrupalContext
         - Drupal\social\Behat\SocialMessageContext
